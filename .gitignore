@@ -1,3 +1,8 @@
-# List of all files that won't be commited in a Pull Request
+# Files and Directories to be ignored
 
+
+# Build directory from CMake
 build
+
+# File used to store Finder(mac) information about this project's directory
+.DS_Store
