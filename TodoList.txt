@@ -1,0 +1,47 @@
+
+//     ______                        ______            _          
+//    / ____/___ _____ ___  ___     / ____/___  ____ _(_)___  ___ 
+//   / / __/ __ `/ __ `__ \/ _ \   / __/ / __ \/ __ `/ / __ \/ _ \
+//  / /_/ / /_/ / / / / / /  __/  / /___/ / / / /_/ / / / / /  __/
+//  \____/\__,_/_/ /_/ /_/\___/  /_____/_/ /_/\__, /_/_/ /_/\___/ 
+//                                           /____/               
+
+
+~ Instructions to rendering.
+
+1. Define VAO, VBO, and EBO as unsigned int.k
+    unsigned int VAO, VBO, EBO;
+
+2. Place VAO, VBO, and EBO in OpenGL buffer.
+    glGenVertexArrays(1, &VAO);
+    glGenBuffers(1, &VBO);
+    glGenBuffers(1, &EBO);
+   
+
+3. Bind VAO, VBO, and EBO to OpenGL buffer.
+    glBindVertexArray(VAO);
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+
+4. Retrieve VBO, EBO data from buffer.
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
+5. Set vertex attribute pointers.
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
+
+
+
+
+~ PENDING IMPLEMENTATiONS
+    
+    - Develop a shader loader !!! DONE
+
+    - Develop a camera feature !!!
+
+    - Develop a 3D object loader !!!
+
+    - Develop a frame rate tracker !!
+
+    - Develop a GRID scene !!!
