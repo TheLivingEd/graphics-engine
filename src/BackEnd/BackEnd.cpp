@@ -9,7 +9,6 @@
 #include <iostream>
 #include <string>
 
-
 namespace BackEnd {
 
     void Init() {
@@ -58,6 +57,7 @@ namespace BackEnd {
             return;
         }
     }
+
 
     void w_Close() {
         glfwTerminate();
