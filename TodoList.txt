@@ -7,7 +7,7 @@
 //                                           /____/               
 
 
-~ Instructions to rendering.
+~ Instructions to rendering
 
 1. Define VAO, VBO, and EBO as unsigned int.k
     unsigned int VAO, VBO, EBO;
