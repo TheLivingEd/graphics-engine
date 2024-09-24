@@ -4,12 +4,12 @@
 
 #include <GLFW/glfw3.h>
 
-namespace BackEnd {
+namespace BackEnd
+{
 void Init();
-void w_Create();
-void w_Close();
-void w_ErrorCall();
-void w_BeginFrame();
-void w_EndFrame();
-void grid();
+void create_Window();
+void close_Window();
+void error_Window();
+void beginframe_Window();
+void endframe_Window(GLFWwindow *window);
 } // namespace BackEnd
